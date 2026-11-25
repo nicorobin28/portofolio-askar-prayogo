@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFEF9" />
+    <title>Askar Prayogo — Software Engineer · Dari Ide Menjadi Dampak</title>
+    <meta
+      name="description"
+      content="Portofolio Askar Prayogo, Fullstack Software Engineer yang merancang dan membangun aplikasi web, mobile, desktop, serta infrastruktur server dengan dampak bisnis terukur."
+    />
+    <meta name="author" content="Askar Prayogo" />
+    <meta property="og:title" content="Askar Prayogo — Software Engineer · Dari Ide Menjadi Dampak" />
+    <meta
+      property="og:description"
+      content="Fullstack Software Engineer yang mengubah kebutuhan bisnis menjadi produk digital dan sistem yang terukur dampaknya."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/profile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('theme') || 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) {
+            meta.setAttribute('content', theme === 'dark' ? '#181827' : '#FFFEF9');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   ASKAR PRAYOGO — PORTFOLIO · Neubrutalism × ReactBits Design System
+   Tailwind CSS v4
+   ========================================================================== */
+
+@theme {
+  /* fonts */
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* brand colors */
+  --color-primary: #3465FF;
+  --color-lime: #C7F904;
+  --color-orange: #FD8401;
+
+  /* neubrutalism palette */
+  --color-bg: #FFFEF9;
+  --color-surface: #FFFFFF;
+  --color-text: #181827;
+  --color-border: #181827;
+  --color-muted: #555566;
+  --color-faint: #76768A;
+
+  /* dark variants */
+  --color-primary-dark: #5B8AFF;
+  --color-lime-dark: #D4FF33;
+  --color-orange-dark: #FF9F33;
+  --color-bg-dark: #181827;
+  --color-surface-dark: #1E1E35;
+  --color-text-dark: #FFFFFF;
+  --color-border-dark: #FFFFFF;
+  --color-muted-dark: #B4B4CC;
+  --color-faint-dark: #8A8AA6;
+
+  /* neubrutalist shadows (zero blur) */
+  --shadow-brutal: 4px 4px 0 var(--color-border);
+  --shadow-brutal-sm: 2px 2px 0 var(--color-border);
+  --shadow-brutal-lg: 6px 6px 0 var(--color-border);
+  --shadow-brutal-xl: 8px 8px 0 var(--color-border);
+
+  /* rhythm */
+  --spacing-gutter: clamp(1rem, 4vw, 3.5rem);
+  --spacing-maxw: 78rem;
+  --spacing-nav-h: 4.25rem;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* ==========================================================================
+   Dark mode variable overrides
+   ========================================================================== */
+[data-theme="dark"] {
+  --color-primary: var(--color-primary-dark);
+  --color-lime: var(--color-lime-dark);
+  --color-orange: var(--color-orange-dark);
+  --color-bg: var(--color-bg-dark);
+  --color-surface: var(--color-surface-dark);
+  --color-text: var(--color-text-dark);
+  --color-border: var(--color-border-dark);
+  --color-muted: var(--color-muted-dark);
+  --color-faint: var(--color-faint-dark);
+  --shadow-brutal: 4px 4px 0 var(--color-border-dark);
+  --shadow-brutal-sm: 2px 2px 0 var(--color-border-dark);
+  --shadow-brutal-lg: 6px 6px 0 var(--color-border-dark);
+  --shadow-brutal-xl: 8px 8px 0 var(--color-border-dark);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--spacing-nav-h) + 1.5rem);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  img, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border: 2px solid var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Neubrutalism tactile helpers */
+@layer utilities {
+  .brutal-box {
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-brutal);
+  }
+
+  .brutal-press {
+    transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 140ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease, color 150ms ease;
+  }
+
+  .brutal-press:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-brutal-lg);
+  }
+
+  .brutal-press:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+  }
+
+  .bg-halftone {
+    background-image: radial-gradient(var(--color-border) 1.25px, transparent 1.25px);
+    background-size: 14px 14px;
+  }
+
+  .bg-grid-brutal {
+    background-image:
+      linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
