@@ -276,42 +276,42 @@ export const projects: ProjectItem[] = [
     ],
     images: [
       {
-        src: "/assets/project-image/project-image-1.png",
+        src: "../assets/project-image/project-image-1.png",
         alt: "Tampilan Login Perpustakaan",
         caption: "Halaman login untuk staf perpustakaan.",
       },
       {
-        src: "/assets/project-image/project-image-2.png",
+        src: "../assets/project-image/project-image-2.png",
         alt: "Tampilan Dashboard Perpustakaan",
         caption: "Dashboard utama katalogisasi dan sirkulasi buku",
       },
       {
-        src: "/assets/project-image/project-image-3.png",
+        src: "../assets/project-image/project-image-3.png",
         alt: "Tampilan Manajemen Buku",
         caption: "Fitur pencarian instan dan manajemen koleksi buku",
       },
       {
-        src: "/assets/project-image/project-image-4.png",
+        src: "../assets/project-image/project-image-4.png",
         alt: "Tampilan Manajemen Peminjaman",
         caption: "Halaman pencatatan peminjaman buku",
       },
       {
-        src: "/assets/project-image/project-image-5.png",
+        src: "../assets/project-image/project-image-5.png",
         alt: "Tampilan Manajemen Pengembalian Buku",
         caption: "Halaman pencatatan pengembalian buku",
       },
       {
-        src: "/assets/project-image/project-image-6.png",
+        src: "../assets/project-image/project-image-6.png",
         alt: "Tampilan Manajemen Siswa",
         caption: "Halaman pencatatan data siswa",
       },
       {
-        src: "/assets/project-image/project-image-7.png",
+        src: "../assets/project-image/project-image-7.png",
         alt: "Tampilan Manajemen Denda",
         caption: "Halaman pencatatan data denda",
       },
       {
-        src: "/assets/project-image/project-image-8.png",
+        src: "../assets/project-image/project-image-8.png",
         alt: "Tampilan Laporan Perpustakaan",
         caption:
           "Laporan otomatis sirkulasi buku, peminjaman, pengembalian, dan denda",
@@ -369,18 +369,18 @@ export const projects: ProjectItem[] = [
     ],
     images: [
       {
-        src: "/assets/votapps/main-menu.png",
+        src: "../assets/votapps/main-menu.png",
         alt: "Tampilan Menu Utama VOTAPPS",
         caption:
           "Menu utama aplikasi VOTAPPS dengan opsi navigasi ke fitur latihan dan laporan.",
       },
       {
-        src: "/assets/votapps/menu-materi-latihan.png",
+        src: "../assets/votapps/menu-materi-latihan.png",
         alt: "Tampilan Menu Materi Latihan VOTAPPS",
         caption: "Menu materi latihan aplikasi VOTAPPS",
       },
       {
-        src: "/assets/votapps/menu-latihan.webp",
+        src: "../assets/votapps/menu-latihan.webp",
         alt: "Tampilan Menu Buat Jadwal Berlatih VOTAPPS",
         caption:
           "Menu berlatih aplikasi VOTAPPS dengan opsi jadwal dan panduan materi.",
@@ -444,37 +444,37 @@ export const projects: ProjectItem[] = [
     ],
     images: [
       {
-        src: "/assets/cms-apps/main-menu-showcase-portfolio.png",
+        src: "../assets/cms-apps/main-menu-showcase-portfolio.png",
         alt: "Tampilan Menu Utama CMS Apps",
         caption:
           "Menu utama aplikasi CMS Portfolio Apps dengan menampilkan showcase portofolio proyek",
       },
       {
-        src: "/assets/cms-apps/detail-showcase-project.png",
+        src: "../assets/cms-apps/detail-showcase-project.png",
         alt: "Detail Showcase Proyek",
         caption:
           "Tampilan detail showcase proyek dengan deskripsi pekerjaan, role, dan tautan terkait.",
       },
       {
-        src: "/assets/cms-apps/page-about.png",
+        src: "../assets/cms-apps/page-about.png",
         alt: "Halaman Tentang Saya",
         caption:
           "Tampilan halaman tentang saya dengan informasi pribadi, kontak, dan pengalaman kerja dalam bentuk timeline.",
       },
       {
-        src: "/assets/cms-apps/dashboard-panel-cms.png",
+        src: "../assets/cms-apps/dashboard-panel-cms.png",
         alt: "Panel Dashboard CMS",
         caption:
           "Tampilan panel dashboard CMS berisi informasi terkait konten portofolio, pengalaman, dan keahlian yang dapat dikelola secara real-time.",
       },
       {
-        src: "/assets/cms-apps/manajemen-portofolio.png",
+        src: "../assets/cms-apps/manajemen-portofolio.png",
         alt: "Panel Manajemen Portofolio",
         caption:
           "Tampilan panel manajemen portofolio berisi informasi terkait proyek, pengalaman, dan keahlian yang dapat dikelola secara real-time.",
       },
       {
-        src: "/assets/cms-apps/manajemen-experience.png",
+        src: "../assets/cms-apps/manajemen-experience.png",
         alt: "Panel Manajemen Pengalaman",
         caption:
           "Tampilan panel manajemen pengalaman berisi informasi terkait pengalaman bekerja dalam sebuah instansi yang dapat dikelola secara real-time.",
@@ -535,43 +535,43 @@ export const projects: ProjectItem[] = [
     ],
     images: [
       {
-        src: "/assets/spk-apps/onboarding-screen.png",
+        src: "../assets/spk-apps/onboarding-screen.png",
         alt: "Tampilan Onboarding SPK Apps",
         caption:
           "Tampilan awal aplikasi SPK Seleksi Penerimaan Kurir yang menampilkan informasi singkat tentang sistem dan cara penggunaannya.",
       },
       {
-        src: "/assets/spk-apps/login-page.png",
+        src: "../assets/spk-apps/login-page.png",
         alt: "Tampilan Login SPK Apps",
         caption:
           "Tampilan login aplikasi SPK Seleksi Penerimaan Kurir yang memungkinkan Tim Rekrutmen untuk masuk ke dalam sistem.",
       },
       {
-        src: "/assets/spk-apps/dashboard-aplikasi.png",
+        src: "../assets/spk-apps/dashboard-aplikasi.png",
         alt: "Tampilan Dashboard SPK Apps",
         caption:
           "Tampilan dashboard aplikasi SPK Seleksi Penerimaan Kurir yang menampilkan overview informasi terkait prediksi calon kurir, serta beberapa menu sebagai quick access.",
       },
       {
-        src: "/assets/spk-apps/manajemen-fitur-kriteria.png",
+        src: "../assets/spk-apps/manajemen-fitur-kriteria.png",
         alt: "Tampilan Manajemen Fitur SPK Apps",
         caption:
           "Tampilan manajemen fitur aplikasi SPK Seleksi Penerimaan Kurir yang memungkinkan Tim Rekrutmen untuk mengelola kriteria seleksi secara real-time.",
       },
       {
-        src: "/assets/spk-apps/menu-dataset.png",
+        src: "../assets/spk-apps/menu-dataset.png",
         alt: "Tampilan Menu Dataset SPK Apps",
         caption:
           "Tampilan menu dataset aplikasi SPK Seleksi Penerimaan Kurir yang menampilkan data historis kandidat kurir yang digunakan untuk melatih model Naive Bayes.",
       },
       {
-        src: "/assets/spk-apps/menu-prediksi-kelayakan-calon-kurir.png",
+        src: "../assets/spk-apps/menu-prediksi-kelayakan-calon-kurir.png",
         alt: "Tampilan Menu Prediksi Kelayakan Calon Kurir",
         caption:
           "Tampilan menu prediksi kelayakan calon kurir yang menampilkan hasil analisis berdasarkan data historis.",
       },
       {
-        src: "/assets/spk-apps/page-laporan.png",
+        src: "../assets/spk-apps/page-laporan.png",
         alt: "Tampilan Page Laporan SPK Apps",
         caption:
           "Tampilan page laporan aplikasi SPK Seleksi Penerimaan Kurir yang menampilkan hasil analisis berdasarkan data historis.",
@@ -626,13 +626,13 @@ export const projects: ProjectItem[] = [
     ],
     images: [
       {
-        src: "/assets/network-ops/bukti-sertifikat-magang.png",
+        src: "../assets/network-ops/bukti-sertifikat-magang.png",
         alt: "Bukti Sertifikat Magang 7Tech",
         caption:
           "Sertifikat resmi program magang di 7Tech Digital yang menegaskan pengalaman dan kontribusi dalam pengelolaan Network Operation Center & Server.",
       },
       {
-        src: "/assets/network-ops/bukti-sertifikat-magang-2.png",
+        src: "../assets/network-ops/bukti-sertifikat-magang-2.png",
         alt: "Bukti Sertifikat Magang 7Tech",
         caption:
           "Sertifikat resmi program magang di 7Tech Digital yang menegaskan pengalaman dan kontribusi dalam pengelolaan Network Operation Center & Server.",
